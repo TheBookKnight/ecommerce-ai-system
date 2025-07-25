@@ -48,7 +48,7 @@ Would you like to continue shopping for more Pokemon items, or do you need any f
 > exit
 Thank you for using the E-Commerce AI System. Goodbye!
 ```
-![Browse and Buy Traces](Flow-1.png)
+![Browse and Buy Traces](screenshots/Flow-1.png)
 
 ### 🔹 Flow 2: Check Order Status
 Prompt: “What’s the status of my order ORD-9001?”
@@ -71,7 +71,7 @@ If you have any more questions or need help with another order, just let me know
 Thank you for using the E-Commerce AI System. Goodbye!
 ```
 
-![Check Order Status Traces](Flow-2.png)
+![Check Order Status Traces](screenshots/Flow-2.png)
 
 ### 🔹 Flow 3: Refund
 Prompt: “I want to return my blender because it’s broken.”
@@ -97,7 +97,7 @@ Your refund reference is: RFD-102. You’ll receive a confirmation and next step
 Thank you for using the E-Commerce AI System. Goodbye!
 ```
 
-![Refund traces](Flow-3.png)
+![Refund traces](screenshots/Flow-3.png)
 
 ### 🔹 Flow 4: Ask About Return Policy
 Prompt: “How long do I have to return something?”
@@ -116,7 +116,7 @@ I'm sorry, but I couldn't find the specific return policy information. Would you
 Thank you for using the E-Commerce AI System. Goodbye!
 ```
 
-![Ask about Return Policy](Flow-4.png)
+![Ask about Return Policy](screenshots/Flow-4.png)
 
 ### 🔹 Flow 5: Combo Flow
 Prompt: “Buy a Charizard figure and tell me the return policy.”
@@ -146,7 +146,7 @@ Would you like help with anything else—perhaps checking out, looking for anoth
 Thank you for using the E-Commerce AI System. Goodbye!
 ```
 
-![Combo Flow](Flow-5.png)
+![Combo Flow](screenshots/Flow-5.png)
 
 ## Installation
 
