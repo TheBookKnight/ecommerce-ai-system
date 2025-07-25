@@ -187,3 +187,7 @@ Thank you for using the E-Commerce AI System. Goodbye!
     ```bash
     python ecommerce_program.py
     ```
+
+### TBD ... Evaluation
+
+The agents' evaluation script is initialized with some boiler plate code from Copilot. But, I'll manually refine it later later. Right now, this is only to demonstrate handoffs between agents.
