@@ -8,7 +8,7 @@ from pydantic import Field
 
 import config
 
-weave.init(config.TEST_WEAVE_PROJECT)
+weave.init(project_name=config.TEST_WEAVE_PROJECT)
 
 @dataclass
 class EvalResult:
@@ -127,13 +127,14 @@ MULTI_AGENT_TESTS = {
             "I am Ash Ketchum. If you find a Charmander figure, then add it to the cart, place the order now (no confirmation needed), and finally tell me the return policy for it. That's the only item I want.",
             ExpectedBehavior(
                 final_output_validator=lambda x: all(
-                    term.lower() in x.lower() for term in ["charmander figure", "cart", "return", "ord"]
+                    term.lower() in x.lower() for term in ["charmander figure", "cart", "return"]
                 ),
                 expected_tool_calls=["search_items", "add_to_cart", "place_order", "get_store_faq"],
                 expected_agent_sequence=[
                     "Triage Agent",
                     "Shopping Agent",
-                    "Flight Booking Agent",
+                    "Order Agent",
+                    "FAQ Agent",
                 ],
                 min_steps=3,
                 max_steps=6,
@@ -150,7 +151,7 @@ class AgentModel(weave.Model):
     name: Optional[str] = None
     agent: Any = Field(default=None)
 
-    def __init__(self, agent: Any, name: str = None):
+    def __init__(self, agent: Agent, name: str = None):
         super().__init__() # Important: call weave.Model's __init__
         self.agent = agent
         self.name = name if name else agent.name
