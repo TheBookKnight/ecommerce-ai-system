@@ -192,3 +192,5 @@ Thank you for using the E-Commerce AI System. Goodbye!
     ```bash
     python ecommerce_evals.py
     ```
+
+TODO: For this multi-agent system, need to update the agents (or even create a routing agent) to handle more complex scenarios. Will look into it later
