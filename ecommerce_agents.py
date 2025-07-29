@@ -1,4 +1,4 @@
-from agents import Agent, Runner, function_tool
+from agents import Agent, function_tool
 
 @function_tool
 def search_items(query: str):
